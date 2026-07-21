@@ -1,2 +1,1 @@
-# STL
-An C++ replicated stl library.
+Developed a modular C++ data structures library from scratch using object-oriented programming principles. Designed abstract interfaces, custom iterators, and reusable implementations of data structures with support for polymorphism, operator overloading, and extensible architecture. Built to simplify integration into C++ applications while promoting clean, reusable, and maintainable code.
