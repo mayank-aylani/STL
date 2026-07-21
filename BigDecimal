@@ -1,0 +1,31 @@
+#ifndef __BigDecimal__$__1209
+#define __BigDecimal__$__1209
+#include<iostream>
+class BigDecimal
+{
+char *integerPart;
+char *fractionalPart;
+char sign;
+public:
+BigDecimal();
+BigDecimal(const char *);
+BigDecimal(const BigDecimal &other);
+virtual ~BigDecimal();
+BigDecimal & operator=(const BigDecimal &other);
+BigDecimal & operator+(const BigDecimal &other);
+BigDecimal & operator-(const BigDecimal &other);
+BigDecimal & operator/(const BigDecimal &other);
+BigDecimal & operator*(const BigDecimal &other);
+BigDecimal & operator%(const BigDecimal &other);
+int operator>(const BigDecimal &other);
+int operator<(const BigDecimal &other);
+int operator>=(const BigDecimal &other);
+int operator<=(const BigDecimal &other);
+int operator!=(const BigDecimal &other);
+int operator==(const BigDecimal &other);
+int isNegative();
+int isPositive();
+char getSign();
+BigDecimal abs();
+};
+#endif
